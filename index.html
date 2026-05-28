@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexora AI</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>NEXORA AI</h1>
+    <p class="subtitle">
+      Predict trends, opportunities, and future business potential.
+    </p>
+
+    <div class="search-box">
+      <input
+        type="text"
+        id="ideaInput"
+        placeholder="Enter a business idea or niche..."
+      />
+
+      <button onclick="analyzeIdea()">
+        Analyze Future
+      </button>
+    </div>
+
+    <div class="results" id="results">
+
+      <div class="card">
+        <h2>Trend Strength</h2>
+        <p id="trendStrength">--</p>
+      </div>
+
+      <div class="card">
+        <h2>Growth Prediction</h2>
+        <p id="growthPrediction">--</p>
+      </div>
+
+      <div class="card">
+        <h2>Competition Level</h2>
+        <p id="competitionLevel">--</p>
+      </div>
+
+      <div class="card">
+        <h2>Best Markets</h2>
+        <p id="bestMarkets">--</p>
+      </div>
+
+      <div class="card">
+        <h2>Monetization Potential</h2>
+        <p id="monetizationPotential">--</p>
+      </div>
+
+      <div class="card">
+        <h2>Future Outlook</h2>
+        <p id="futureOutlook">--</p>
+      </div>
+
+    </div>
+
+    <div class="chart-container">
+      <canvas id="trendChart"></canvas>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
