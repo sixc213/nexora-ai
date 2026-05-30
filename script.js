@@ -49,27 +49,75 @@ function analyzeIdea() {
     "Massive Scalability"
   ];
 
-  function randomItem(array) {
-    return array[Math.floor(Math.random() * array.length)];
+  function analyzeIdea() {
+
+  const input =
+    document.getElementById("ideaInput")
+    .value
+    .toLowerCase();
+
+  const result =
+    trendDatabase[input];
+
+  if(result){
+
+    document.getElementById(
+      "trendStrength"
+    ).innerText = result.trend;
+
+    document.getElementById(
+      "growthPrediction"
+    ).innerText = result.growth;
+
+    document.getElementById(
+      "competitionLevel"
+    ).innerText = result.competition;
+
+    document.getElementById(
+      "bestMarkets"
+    ).innerText = result.market;
+
+    document.getElementById(
+      "monetizationPotential"
+    ).innerText = result.monetization;
+
+    document.getElementById(
+      "futureOutlook"
+    ).innerText = result.outlook;
+
+  } else {
+
+    document.getElementById(
+      "trendStrength"
+    ).innerText =
+    "Emerging Opportunity";
+
+    document.getElementById(
+      "growthPrediction"
+    ).innerText =
+    "Moderate Growth";
+
+    document.getElementById(
+      "competitionLevel"
+    ).innerText =
+    "Unknown";
+
+    document.getElementById(
+      "bestMarkets"
+    ).innerText =
+    "Analyzing";
+
+    document.getElementById(
+      "monetizationPotential"
+    ).innerText =
+    "Potential Detected";
+
+    document.getElementById(
+      "futureOutlook"
+    ).innerText =
+    "Needs More Data";
   }
-
-  document.getElementById("trendStrength").innerText =
-    randomItem(trendOptions);
-
-  document.getElementById("growthPrediction").innerText =
-    randomItem(growthOptions);
-
-  document.getElementById("competitionLevel").innerText =
-    randomItem(competitionOptions);
-
-  document.getElementById("bestMarkets").innerText =
-    randomItem(marketOptions);
-
-  document.getElementById("monetizationPotential").innerText =
-    randomItem(moneyOptions);
-
-  document.getElementById("futureOutlook").innerText =
-    randomItem(outlookOptions);
+}
 
   createChart();
 }
