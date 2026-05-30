@@ -1,15 +1,39 @@
-{
+const trendDatabase = {
+
   "ai education": {
-    "trend": "Very High",
-    "growth": "Rapidly Rising",
-    "market": "Africa, India",
-    "outlook": "Promising"
+    trend: "Explosive Growth",
+    growth: "Very High",
+    market: "Africa, India",
+    competition: "Medium",
+    monetization: "Strong",
+    outlook: "Future Unicorn Potential"
   },
 
   "solar energy": {
-    "trend": "High",
-    "growth": "Strong",
-    "market": "Global",
-    "outlook": "Excellent"
+    trend: "High",
+    growth: "Strong",
+    market: "Global",
+    competition: "Medium",
+    monetization: "Excellent",
+    outlook: "Long-Term Winner"
+  },
+
+  "fintech": {
+    trend: "Very High",
+    growth: "Rapid Expansion",
+    market: "Africa",
+    competition: "High",
+    monetization: "Massive",
+    outlook: "Investor Interest Rising"
+  },
+
+  "creator economy": {
+    trend: "Explosive Growth",
+    growth: "Strong",
+    market: "Global",
+    competition: "Medium",
+    monetization: "Very Strong",
+    outlook: "Next Generation Industry"
   }
-}
+
+};
